@@ -1,27 +1,28 @@
 @font-face {
     font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    src: url("fonts/OpenSans-Regular.woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    src: url("fonts/OpenSans-Bold.woff");
     font-weight: bold;
     font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans";
 }
 
 h2 {
     margin: 0;
 }
 
-input, button {
-    font-family: "Open Sans";
-}
-
 .header {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
+    background-image: url('images/banner-bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -29,8 +30,6 @@ input, button {
     position: relative;
     height: 450px;
     margin-bottom: 60px;
-
-    font-family: "Open Sans";
 }
 
 .header::after {
@@ -96,10 +95,6 @@ input, button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-}
-
-main {
-    font-family: "Open Sans";
 }
 
 .all-title {
@@ -221,7 +216,6 @@ main {
 }
 
 .post-preview {
-    max-height: 293px;
     margin-right: 30px;
 }
 
@@ -457,8 +451,6 @@ main {
     padding-left: 55px;
 }
 .shop-image-wrapper {
-    min-width: 300px;
-    min-height: 205px;
     text-align: center;
 }
 
@@ -559,23 +551,23 @@ footer {
 }
 
 .twitter-link {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg');
+    background-image: url('images/004-twitter.svg');
 }
 
 .pinterest-link {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg');
+    background-image: url('images/001-pinterest.svg');
 }
 
 .facebook-link {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg');
+    background-image: url('images/002-facebook-logo.svg');
 }
 
 .instagram-link {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg')
+    background-image: url('images/005-instagram.svg')
 }
 
 .tamblr-link {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg');
+    background-image: url('images/003-tumblr.svg');
 }
 
 .visually-hidden {
@@ -587,7 +579,6 @@ footer {
 
 .copyright-text {
     color: #999999;
-    font-family: "Open Sans";
     font-size: 12px;
     font-weight: bold;
     text-align: center;
@@ -613,7 +604,7 @@ footer {
     }
 
     .posts {
-        width: 60%;
+        width: 55%;
     }
 
     .post {
@@ -636,13 +627,12 @@ footer {
 
     .post-preview {
         margin-bottom: 15px;
+        margin-right: 0;
         width: 100%;
-        height: 300px;
     }
 
     .post-image {
         width: 100%;
-        height: 300px;
         object-fit: contain;
         object-position: left center;
     }
@@ -652,7 +642,7 @@ footer {
     }
 
     .aside-content {
-        width: 30%;
+        width: 35%;
     }
 
     .shop-container {
@@ -785,9 +775,8 @@ footer {
 
     .main-posts-wrapper {
         flex-direction: column;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5% ;
         padding: 0;
     }
 
@@ -802,8 +791,13 @@ footer {
     .post-tags {
         margin-top: 15px;
     }
+
+    .post-preview {
+        margin-right: 0;
+    }
+
     .post-image {
-        width: 300px;
+        width: 100%;
     }
 
     .post-name {
@@ -895,7 +889,6 @@ footer {
 .feedback-list, .feedback-wish-textarea {
     background-color: #f4f7f6;
     color: rgba(0, 0, 0, 0.54);
-    font-family: "Open Sans";
 }
 
 .feedback-field {
@@ -923,6 +916,7 @@ footer {
 
 .feedback-wish-textarea {
     min-height: 130px;
+    font-family: "Open Sans";
 }
 
 .feedback-button {
